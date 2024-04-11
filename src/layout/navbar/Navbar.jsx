@@ -17,7 +17,7 @@ function Navbar() {
                 <NavLink to={'/'}><p>00</p> Home</NavLink>
                 <NavLink to={'/destination/moon'}><p>01</p> Destination</NavLink>
                 <NavLink to={'/crew/commander'}><p>02</p> Crew</NavLink>
-                <NavLink to={'/technology'}><p>03</p> Technology</NavLink>
+                <NavLink to={'/technology/launch-vehicle'}><p>03</p> Technology</NavLink>
             </ul>
             <i onClick={mobilnav} className="fa-solid fa-bars"></i>
             {mobilenav &&
@@ -27,7 +27,7 @@ function Navbar() {
                         <NavLink to={'/'}><p>00</p> Home</NavLink>
                         <NavLink to={'/destination/moon'}><p>01</p> Destination</NavLink>
                         <NavLink to={'/crew/commander'}><p>02</p> Crew</NavLink>
-                        <NavLink to={'/technology'}><p>03</p> Technology</NavLink>
+                        <NavLink to={'/technology/launch-vehicle'}><p>03</p> Technology</NavLink>
                     </ul>
                 </div>
             }

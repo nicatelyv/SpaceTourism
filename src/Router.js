@@ -8,7 +8,9 @@ import CrewCommander from "./components/Crew/CrewCommander";
 import CrewMissionSpecialist from "./components/Crew/CrewMissionSpecialist";
 import CrewPilot from "./components/Crew/CrewPilot";
 import CrewFlightEngineer from "./components/Crew/CrewFlightEngineer";
-
+import TechnologyLaunchVehicle from "./components/Technology/TechnologyLaunchVehicle";
+import TechnologySpaceport from "./components/Technology/TechnologySpaceport";
+import TechnologySpaceCapsule from "./components/Technology/TechnologySpaceCapsule";
 
 export const router = createBrowserRouter([
     {
@@ -50,5 +52,17 @@ export const router = createBrowserRouter([
     {
         path: "/crew/flight-engineer",
         element: <CrewFlightEngineer />
+    },
+    {
+        path: "/technology/launch-vehicle",
+        element: <TechnologyLaunchVehicle />
+    },
+    {
+        path: "/technology/spaceport",
+        element: <TechnologySpaceport />
+    },
+    {
+        path: "/technology/space-capsule",
+        element: <TechnologySpaceCapsule />
     },
 ])
