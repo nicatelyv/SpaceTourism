@@ -201,6 +201,12 @@
     .destination {
         .destinationMain {
             width: 90%;
+            margin-top: 60px;
+
+            &>h2 {
+                padding-left: 10px;
+                font-size: 20px;
+            }
 
             .destinationContent {
                 width: 100%;
@@ -215,6 +221,14 @@
 
                     &>p {
                         width: 100%;
+                    }
+
+                    .destinationEndTexts {
+                        &>div {
+                            &>h3 {
+                                font-size: 20px;
+                            }
+                        }
                     }
                 }
             }

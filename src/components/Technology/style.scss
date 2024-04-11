@@ -192,3 +192,28 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .technology {
+        .technologyMain {
+            &>h2 {
+                font-size: 20px;
+            }
+
+            .technologyContent {
+                &>ul {
+                    &>a {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .technologyTexts {
+                    &>h1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

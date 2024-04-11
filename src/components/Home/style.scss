@@ -79,6 +79,11 @@
             font-style: normal;
             transition: .7s;
         }
+
+        .explore:hover {
+            box-shadow: rgba(53, 62, 72, 0.4) 0px 0px 0px 50px, rgba(9, 37, 69, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            transition: .7s;
+        }
     }
 }
 
@@ -152,6 +157,7 @@
                 width: 150px;
                 height: 150px;
                 font-size: 20px;
+                opacity: .7;
             }
         }
     }
