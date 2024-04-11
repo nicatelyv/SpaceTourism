@@ -1,9 +1,223 @@
-.destinationHeader {
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+.destination {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: black;
     background-image: url(../../images/DestinationHeader.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .destinationMain {
+        width: 80%;
+        min-height: 75vh;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+
+        &>h2 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+            font-family: "Barlow Condensed", sans-serif;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 4.7px;
+            text-align: start;
+            width: 100%;
+
+            &>p {
+                color: gray;
+                font-weight: 600;
+            }
+        }
+
+        .destinationContent {
+            width: 90%;
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            &>img {
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                animation-name: spin;
+                animation-duration: 40s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .destinationTexts {
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                text-align: start;
+
+                &>ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+
+                    &>a {
+                        color: white;
+                        font-family: "Barlow Condensed", sans-serif;
+                        font-style: normal;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        opacity: .8;
+                        transition: .5s;
+                    }
+
+                    &>a:hover {
+                        border-bottom: 2px solid gray;
+                        transition: .5s;
+                    }
+
+                    &>a.active {
+                        opacity: 1;
+                        border-bottom: 2px solid white;
+                    }
+
+                }
+
+                &>h1 {
+                    color: white;
+                    font-size: 100px;
+                    font-family: "Bellefair", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-transform: uppercase;
+                }
+
+                &>p {
+                    color: gray;
+                    font-family: "Barlow", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 32px;
+                }
+
+                hr {
+                    width: 100%;
+                }
+
+                .destinationEndTexts {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &>div {
+                        &>h5 {
+                            color: gray;
+                            letter-spacing: 2px;
+                            font-size: 14px;
+                            font-family: "Barlow Condensed", sans-serif;
+                            font-style: normal;
+                            text-transform: uppercase;
+                        }
+
+                        &>h3 {
+                            color: white;
+                            font-family: "Bellefair", serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            text-transform: uppercase;
+                            font-size: 28px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .destination {
+        overflow: auto;
+        padding-bottom: 30px;
+
+        .destinationMain {
+            gap: 20px;
+
+            .destinationContent {
+                width: 100%;
+                flex-direction: column;
+
+                &>img {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                .destinationTexts {
+                    align-items: center;
+                    text-align: center;
+
+                    &>h1 {
+                        font-size: 80px;
+                    }
+
+                    &>p {
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+
+                    .destinationEndTexts {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .destination {
+        .destinationMain {
+            width: 90%;
+
+            .destinationContent {
+                width: 100%;
+
+                &>img {
+                    width: 170px;
+                    height: 170px;
+                }
+
+                .destinationTexts {
+                    width: 100%;
+
+                    &>p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
