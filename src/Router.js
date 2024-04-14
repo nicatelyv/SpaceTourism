@@ -22,47 +22,62 @@ export const router = createBrowserRouter([
         element: <Home />
     },
     {
-        path: "/destination/moon",
-        element: <DestinationMoon />
+        path: "/destination",
+        children: [
+            {
+                path: '/destination',
+                element: <DestinationMoon />
+            },
+            {
+                path: '/destination/mars',
+                element: <DestinationMars />
+            },
+            {
+                path: "/destination/europa",
+                element: <DestinationEuropa />
+            },
+            {
+                path: "/destination/titan",
+                element: <DestinationTitan />
+            },
+        ]
     },
     {
-        path: "/destination/mars",
-        element: <DestinationMars />
+        path: "/crew",
+        children: [
+            {
+                path: '/crew',
+                element: <CrewCommander />
+            },
+            {
+                path: '/crew/mission-specialist',
+                element: <CrewMissionSpecialist />
+            },
+            {
+                path: "/crew/pilot",
+                element: <CrewPilot />
+            },
+            {
+                path: "/crew/flight-engineer",
+                element: <CrewFlightEngineer />
+            },
+        ]
     },
     {
-        path: "/destination/europa",
-        element: <DestinationEuropa />
-    },
-    {
-        path: "/destination/titan",
-        element: <DestinationTitan />
-    },
-    {
-        path: "/crew/commander",
-        element: <CrewCommander />
-    },
-    {
-        path: "/crew/mission-specialist",
-        element: <CrewMissionSpecialist />
-    },
-    {
-        path: "/crew/pilot",
-        element: <CrewPilot />
-    },
-    {
-        path: "/crew/flight-engineer",
-        element: <CrewFlightEngineer />
-    },
-    {
-        path: "/technology/launch-vehicle",
-        element: <TechnologyLaunchVehicle />
-    },
-    {
-        path: "/technology/spaceport",
-        element: <TechnologySpaceport />
-    },
-    {
-        path: "/technology/space-capsule",
-        element: <TechnologySpaceCapsule />
-    },
+        path: "/technology",
+        children: [
+            {
+                path: '/technology',
+                element: <TechnologyLaunchVehicle />
+            },
+            {
+                path: '/technology/spaceport',
+                element: <TechnologySpaceport />
+            },
+            {
+                path: "/technology/space-capsule",
+                element: <TechnologySpaceCapsule />
+            }
+        ]
+    }
 ])

@@ -16,7 +16,7 @@ function DestinationHeader() {
                         <h1>MARK SHUTTLEWORTH</h1>
                         <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
                         <ul>
-                            <NavLink to={'/crew/commander'}></NavLink>
+                            <NavLink style={{ backgroundColor: "gray" }} to={'/crew'}></NavLink>
                             <NavLink to={'/crew/mission-specialist'}></NavLink>
                             <NavLink to={'/crew/pilot'}></NavLink>
                             <NavLink to={'/crew/flight-engineer'}></NavLink>

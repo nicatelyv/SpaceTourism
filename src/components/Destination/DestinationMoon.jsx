@@ -15,7 +15,7 @@ function DestinationHeader() {
                     <img src={Moon} alt="" />
                     <div className="destinationTexts">
                         <ul>
-                            <NavLink to={'/destination/moon'}>Moon</NavLink>
+                            <NavLink to={'/destination'}>Moon</NavLink>
                             <NavLink to={'/destination/mars'}>Mars</NavLink>
                             <NavLink to={'/destination/europa'}>Europa</NavLink>
                             <NavLink to={'/destination/titan'}>Titan</NavLink>

@@ -16,7 +16,7 @@ function DestinationHeader() {
                         <h1>Anousheh Ansari</h1>
                         <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
                         <ul>
-                            <NavLink to={'/crew/commander'}></NavLink>
+                            <NavLink style={{ backgroundColor: "gray" }} to={'/crew'}></NavLink>
                             <NavLink to={'/crew/mission-specialist'}></NavLink>
                             <NavLink to={'/crew/pilot'}></NavLink>
                             <NavLink to={'/crew/flight-engineer'}></NavLink>

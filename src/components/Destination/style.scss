@@ -94,11 +94,6 @@
                         transition: .5s;
                     }
 
-                    &>a:hover {
-                        border-bottom: 2px solid gray;
-                        transition: .5s;
-                    }
-
                     &>a.active {
                         opacity: 1;
                         border-bottom: 2px solid white;

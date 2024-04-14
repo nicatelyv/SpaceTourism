@@ -13,7 +13,7 @@ function Technology() {
                 <div className='technologyContent'>
                     <img className='mobileImg' src={SpaceCapsule} alt="" />
                     <ul>
-                        <NavLink to={'/technology/launch-vehicle'}>1</NavLink>
+                        <NavLink style={{ backgroundColor: "inherit", color: "white" }} to={'/technology'}>1</NavLink>
                         <NavLink to={'/technology/spaceport'}>2</NavLink>
                         <NavLink to={'/technology/space-capsule'}>3</NavLink>
                     </ul>
