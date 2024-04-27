@@ -1,1 +1,0 @@
-Space tourism website with React!
