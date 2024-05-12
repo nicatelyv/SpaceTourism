@@ -30,7 +30,7 @@ function DestinationHeader() {
                     <img src={DouglasHurley} alt="" />
                     <div className="crewTexts">
                         <ul>
-                            <NavLink to={'/crew/commander'}></NavLink>
+                            <NavLink to={'/crew'}></NavLink>
                             <NavLink to={'/crew/mission-specialist'}></NavLink>
                             <NavLink to={'/crew/pilot'}></NavLink>
                             <NavLink to={'/crew/flight-engineer'}></NavLink>
